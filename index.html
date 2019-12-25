@@ -1,0 +1,122 @@
+<!doctype html>
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">                    <!--互換表示による崩れを起こさせないためのmetaタグ-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">     <!--レスポンシブWebデザインを使うために必要なmetaタグ-->
+
+    <title>website</title>
+    <link rel="stylesheet" href="page1.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">    <!-- font awesome を使うためのCDNコード -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script>
+      $(function(){
+        // #で始まるリンクをクリックしたら実行されます
+        $('a[href^="#"]').click(function() {
+          // スクロールの速度
+          var speed = 400; // ミリ秒で記述
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+    </script>
+</head>
+
+
+<body>
+
+<div class= "lp-wrapper">
+    <div class= "lp-container">
+      <ul>
+        <li><a href="#1">profile</a></li>
+        <li><a href="#2">works</a></li>
+      </ul>
+      <p>Koki Kitaichi</p>
+
+   </div>
+</div>
+<div class="profile-wrapper">
+    <div class="profile-container">
+      <div id="1">
+         <img class="profile-photo" src="image/IMG_20190212_195215.png">
+      </div>
+      <h1>profile</h1>
+      <p>1988年に北海道稚内市で生まれ、小樽育ち。<p>
+      <p>立命館大学を卒業後、会社に就職はせず、東南アジアと日本国内を一人で放浪。</p>
+      <p>のちにアートに興味をもち、それ以降は国内や海外を旅しながら独学で絵を描く生活を送る。</p>
+      <p>絵をプレゼントした相手に喜んでもらったことがきっかけで、本格的に打ち込むことに。</p>
+      <p>エネルギッシュな雰囲気の作品が好きです。</p>
+      <div class="hobby"><p>趣味・・・一人旅、山登り、外国語学習、料理、Macのパソコンいじり</p></div>
+    </div>
+</div>
+  <div class="works-wrapper">
+    <div class="works-container">
+       <div id="2">
+         <h2>works</h2>
+      </div>
+       <img class="works-photo" src="image/kathy.jpg">
+       <img class="works-photo" src="image/water.jpg">
+       <img class="works-photo" src="image/abe.jpg">
+       <img class="works-photo" src="image/jun.jpg">
+       <img class="works-photo" src="image/takuto.jpg">
+       <img class="works-photo" src="image/green.jpg">
+       <img class="works-photo" src="image/uchida.jpg">
+       <img class="works-photo" src="image/hanna.jpg">
+       <img class="works-photo" src="image/eye.jpg">
+       <img class="works-photo" src="image/pink.jpg">
+       <img class="works-photo" src="image/tomato.jpg">
+       <img class="works-photo" src="image/take.jpg">
+       <img class="works-photo" src="image/moon.jpg">
+       <img class="works-photo" src="image/abstract.jpg">
+       <img class="works-photo" src="image/smile.jpg">
+       <img class="works-photo" src="image/watersun.jpg">
+       <img class="works-photo" src="image/chikara.jpg">
+       <img class="works-photo" src="image/whale.jpg">
+       <img class="works-photo" src="image/takagi.jpg">
+       <img class="works-photo" src="image/redsnapper.jpg">
+       <img class="works-photo" src="image/flower.jpg">
+       <img class="works-photo" src="image/hanna2.jpg">
+       <img class="works-photo" src="image/panya.jpg">
+       <img class="works-photo" src="image/nakamaru.jpg">
+       <img class="works-photo" src="image/ozawa.jpg">
+       <img class="works-photo" src="image/mikan.jpg">
+       <img class="works-photo" src="image/simple.jpg">
+       <img class="works-photo" src="image/haruka.jpg">
+       <img class="works-photo" src="image/burningsun.jpg">
+       <img class="works-photo" src="image/eeyan.jpg">
+       <img class="works-photo" src="image/et.jpg">
+       <img class="works-photo" src="image/hand.jpg">
+       <img class="works-photo" src="image/burionia.jpg">
+       <img class="works-photo" src="image/hutaba.jpg">
+       <img class="works-photo" src="image/party.jpg">
+       <img class="works-photo" src="image/sleep.jpg">
+       <img class="works-photo" src="image/naoto.jpg">
+       <img class="works-photo" src="image/uchu.jpg">
+       <img class="works-photo" src="image/mona.jpg">
+       <img class="works-photo" src="image/chihaya.jpg">
+       <img class="works-photo" src="image/chanwi.jpg">
+       <img class="works-photo" src="image/uni.jpg">
+       <img class="works-photo" src="image/kado.jpg">
+       <img class="works-photo" src="image/takuto2.jpg">
+       <img class="works-photo" src="image/sea.jpg">
+       <img class="works-photo" src="image/redball.jpg">
+       <img class="works-photo" src="image/bird.jpg">
+       <img class="works-photo" src="image/goda.jpg">
+       <img class="works-photo" src="image/jun2.jpg">
+       <img class="works-photo" src="image/chiho.jpg">
+       <h3>もっと見る</h3>
+       <i class="fab fa-facebook-square fa-3x" style="color:gainsboro;"></i>
+       <i class="fab fa-instagram fa-3x" style="color:gainsboro;"></i>
+    </div>
+  </div>
+  <div class="last-wrapper">
+     <div class="last-container">
+         <p>All copyrights reserved.</p>
+     </div>
+  </div>
+
+</body>
